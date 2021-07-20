@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>DETECTOR </title>
+</head>
+
+<body>
+<h1>SECURITY INSPECTION</h1>
+<form action="" method="POST">
+{% csrf_token %}
+select image <input type="file" id="myfile" name="myfile"/><br/>
+select xmlfile <input type="file" id="myxmlfile" name="myxmlfile"/><br/>
+<input type="submit" value="Post"/>
+</form>
+<img src="{{ data}}" />
+</body>
+
+</html>
+
+
